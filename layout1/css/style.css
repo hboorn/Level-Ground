@@ -1,0 +1,374 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+body *{
+  margin: 0;
+}
+
+/* NAVIGATION BAR */
+header {
+  position: fixed;
+  width: 95%;
+  padding-top: 15px;
+  height: 55px;
+  background-color: #66768a;
+  color: white;
+  border-radius: 0 0 30px 30px;
+  display: inline-block;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  text-align: center;
+}
+
+header nav *{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header nav ul {
+  padding: 4px 0 0 0;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header nav ul li + li a {
+  padding-left: 15px;
+}
+
+header nav > a{
+  text-decoration: none;
+  color: #66768a;
+  font-weight: 700;
+  border: thin solid white;
+  border: 5%;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 57.5px;
+}
+
+.logo {
+  height: 30px;
+}
+
+nav {
+  /*display: flex;
+  align-items: center;
+  justify-content: space-around;*/
+}
+
+nav ul {
+  float: left;
+  margin-left: 3%;
+}
+
+nav > a {
+  float: right;
+  margin-right: 3%;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: var(--main-white);
+}
+
+/* MAIN SECTION */
+main {
+  background-color: #66768a;
+  color: white;
+  padding-top: 205px;
+}
+
+
+main h1{
+  font-family: 'Fjalla One', sans-serif;
+  padding-bottom: 68px;
+  font-size: 70px;
+  text-align: center;
+  font-weight: 100;
+  word-spacing: 10px;
+  letter-spacing: 1.5px;
+}
+
+main p, main a{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main p{
+  margin: 0 auto;
+  line-height: 25px;
+  font-size: 23px;
+  text-align: center;
+  width: 68%;
+}
+
+.playpic {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  color: #FFFFFFA1;
+}
+
+main a {
+}
+
+main a img {
+  height: 30px;
+  padding-right: 10px;
+}
+
+.videolink{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #FFFFFFA1;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+main a {
+  padding-top: 68px;
+}
+
+.placeholdertext{
+  font-size: 12px;
+  padding-top: 145px;
+  padding-bottom: 10px;
+  display: block;
+  text-align: center;
+  color: #000000A1;
+  font-style: italic;
+}
+
+/* WHY SECTION */
+
+.whysection{
+  background-color: white;
+  color: black;
+  margin: 140px 0 140px 0;
+}
+
+.whysection h1{
+  text-align: center;
+  font-weight: lighter;
+  font-size: 46.5px;
+  padding-bottom: 20px;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.whysection p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 44.5%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 33px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* VISIT SECTION */
+
+.visit{
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.visit section {
+  background-color: #dbdfe2;
+  padding-top: 70px;
+  padding-bottom: 87px;
+}
+
+.visitbox {
+  background-color: #66768a;
+  height: 200px;
+  width: 55%;
+  margin: 0 auto;
+}
+
+.visit section section {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.visit section section h2 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.visit section section p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+
+.visit section section a {
+  text-decoration: none;
+  color: black;
+  border: thin solid black;
+  display: inline-block;
+  margin-top: 35px;
+  padding: 18px 70px 17px 70px;
+}
+
+/* VOLUNTEER SECTION */
+
+.volunteer {
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
+  height: 100%;
+  clear: both;
+}
+
+.volunteer h1 {
+  display: block;
+  margin: 100px auto 30px auto;
+  padding-top: 100px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+}
+
+.volunteer p{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: block;
+  margin: 0 auto;
+  width: 40%;
+}
+
+.volunteer a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: thin solid black;
+  padding: 18px 70px 17px 70px;
+  margin-top: 35px;
+  margin-bottom: 83px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #161f2a;
+  font-family: 'Fjalla One', sans-serif;
+  height: 100%;
+  contain: content;
+}
+
+.left {
+  margin-top: 10px;
+  margin-left: 4.5%;
+  width: 153px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.socialmedia {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.socialmedia ul {
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+#twitter {
+  padding: 0 10px 0 10px;
+}
+
+.social {
+  height: 30px;
+}
+
+.footitle {
+  display: inline;
+  text-align: left;
+  color: #66768A;
+}
+
+.lilinks{
+  padding-left: 0px;
+  margin-left: 0px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.right {
+  margin-top: 10px;
+  margin-right: 4.5%;
+  margin-bottom: 10px;
+  width: 153px;
+  float: right;
+  color: white;
+}
+
+.right p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+hr {
+  color: white;
+  border-color: white;
+  clear: both;
+  width: 91%;
+  margin: 0 auto;
+}
+
+footer > p {
+  display: inline-block;
+  color: white;
+  margin-left: 4.5%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+footer > img {
+  margin-right: 4.5%;
+  height: 30px;
+  float: right;
+  margin-top: 10px;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
